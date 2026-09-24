@@ -2,49 +2,36 @@
 
 **Candidate:** Hariom Upadhyay | **Working with:** Kavy, MASTERDB Lead
 
-This submission uses a real, user-supplied dataset (`online_retail_II.xlsx`) and supersedes an earlier dry-run of this task performed on a synthetic dataset (PulseFit Users) before this file was provided.
+This submission uses the real Online Retail II dataset supplied for Task 1.
 
-## What this is
+## Current phase
 
 ```
-Source → Structure → Validate → Classify → Govern → Register (prepared) → Index (pending)
+Source → Structure → Validate → Classify → Govern → Register (prepared) → MASTERDB integration (Integration Day)
 ```
 
-## Dataset chosen
+**Kavy's integration instruction:** Kaggle is used as the placeholder connector/source reference now. On the day of integration, the Kaggle connector will be connected to MASTERDB. UCI remains the authoritative provenance and licence-attribution source.
 
-**Online Retail II** — real (not synthetic) invoice line-item transactions from a UK-based online gift-ware retailer, 1 Dec 2009 – 9 Dec 2011. 1,067,371 source rows across two sheets, combined into one logical dataset; **1,055,237 rows in the registered/cleaned output** after removing 12,133 exact duplicates and quarantining 1 anomalous row.
+## Dataset
 
-## How to reproduce everything
-
-```bash
-cd TASK_1/
-python3 transformation/cleaning_pipeline.py
-```
-
-## Where to look
-
-| What | Where |
-|---|---|
-| Dataset identity, source, classification, known issues | `DATASET_PROFILE.md` |
-| Every quality issue found, rule applied, and validated | `DATA_QUALITY_REPORT.md` |
-| MASTERDB Dataset Model mapping and registration status | `MASTERDB_REGISTRATION_PACKET.md` |
-| Raw combined source file | `dataset_original.csv` |
-| Cleaned, governed output | `dataset_cleaned.csv` |
-| Deterministic cleaning/validation code | `transformation/cleaning_pipeline.py` |
-| Schema + controlled vocabularies | `schema/schema_notes.json` |
-| Automated validation results | `validation/validation_results.json` |
-| Before/after statistics and evidence | `evidence/before_after_statistics/` |
+- Original records: **1,067,371**
+- Cleaned active records: **1,055,237**
+- Exact duplicates removed: **12,133**
+- Quarantined: **1**
+- Validation: **12/12 checks passed**
 
 ## Proof Gates
 
 | Gate | Status |
 |---|---|
-| **Proof 1 — Data Quality** | Met — 12/12 automated validation checks |
-| **Proof 2 — Governance** | Met — owner, custodian, provenance, licence and classification documented |
-| **Proof 3 — MASTERDB Runtime** | Pending — requires access to the real MASTERDB API/interface |
+| Proof 1 — Data Quality | Met — 12/12 automated validation checks |
+| Proof 2 — Governance | Met — provenance, licence, classification and access notes documented |
+| Proof 3 — MASTERDB Runtime | **Integration Day** — live connection is intentionally deferred |
 
-The final MASTERDB registration and discoverability steps are explicitly marked pending rather than fabricated.
+No fake MASTERDB registration response or discovery screenshot is included.
 
-## Submission bundle
+## Large data files
 
-The complete Task 1 package is included as `TASK_1.zip`.
+The original and cleaned CSVs are kept in the final submission ZIP because they exceed GitHub's normal 100 MB per-file limit and therefore are not committed here.
+
+See `TASK_1/` for the documentation, validation, transformation and integration-day artifacts.
