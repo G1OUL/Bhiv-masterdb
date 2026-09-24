@@ -1,7 +1,12 @@
-# Discoverability Proof — PENDING
+# Discoverability Proof — INTEGRATION DAY
 
-Post-registration discovery evidence must be captured after the dataset is registered in the real MASTERDB runtime.
+Discovery evidence is captured after the dataset is actually connected and registered in the real MASTERDB runtime.
 
 - [ ] Search query used
 - [ ] Screenshot/API response
-- [ ] Confirmation of dataset ID, classification, schema and validation status
+- [ ] Confirmation of dataset ID
+- [ ] Confirmation of classification
+- [ ] Confirmation of schema reference
+- [ ] Confirmation of validation status
+
+This is an intentionally deferred integration-day evidence item, not a fabricated result.
