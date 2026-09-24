@@ -1,0 +1,18 @@
+{
+  "validated_at_utc": "2026-09-23T09:25:57.233770+00:00",
+  "checks": [
+    {"check":"no_full_row_duplicates","passed":true},
+    {"check":"line_id_unique","passed":true},
+    {"check":"transaction_type_in_controlled_vocab","passed":true},
+    {"check":"cancellation_type_matches_invoice_prefix","passed":true},
+    {"check":"writeoff_type_matches_invoice_prefix","passed":true},
+    {"check":"country_no_unmapped_leakage","passed":true},
+    {"check":"stockcode_uppercased","passed":true},
+    {"check":"invoice_date_parseable","passed":true},
+    {"check":"no_description_whitespace","passed":true},
+    {"check":"quarantined_rows_excluded_from_clean_output","passed":true},
+    {"check":"exact_duplicates_excluded_from_clean_output","passed":true},
+    {"check":"row_accounting_balances","passed":true}
+  ],
+  "all_passed": true
+}
