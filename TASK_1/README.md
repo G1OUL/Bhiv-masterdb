@@ -1,8 +1,9 @@
 # MASTERDB Task 1
 
-This folder contains the review-ready Task 1 metadata and validation artifacts for the Online Retail II curation exercise.
+Review-ready Task 1 package for the Online Retail II dataset curation exercise.
 
 ## Dataset
+
 - Dataset ID: `online_retail_ii_v1`
 - Source: UCI Machine Learning Repository — Online Retail II
 - Original records: 1,067,371
@@ -11,12 +12,21 @@ This folder contains the review-ready Task 1 metadata and validation artifacts f
 - Rows quarantined: 1
 - Validation: 12/12 checks passed
 
-## Pipeline
-The intended reproducible pipeline is:
-`transformation/cleaning_pipeline.py`
+## Kaggle placeholder / MASTERDB integration
 
-## Registration
-MASTERDB runtime registration and discoverability proof remain pending because live MASTERDB API/runtime access was not available during preparation.
+Per Kavy's instruction, **Kaggle is the placeholder connector for the integration day**. The actual MASTERDB connection is intentionally deferred until that integration session.
+
+UCI remains the authoritative provenance and licence source.
+
+## Task status
+
+- Data curation: complete
+- Normalisation: complete
+- Validation: complete
+- Governance/metadata preparation: complete
+- MASTERDB registration preparation: complete
+- Live MASTERDB registration/discovery: **Integration Day**
 
 ## Large data files
-The raw and cleaned CSVs are intentionally not committed to this repository because they are above GitHub's normal 100 MB per-file limit.
+
+The raw and cleaned CSVs are included in the final submission ZIP but are not committed to GitHub because each exceeds GitHub's normal 100 MB per-file limit.
