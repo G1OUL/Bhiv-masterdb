@@ -1,9 +1,23 @@
-# MASTERDB Registration — PENDING
+# MASTERDB Integration — INTEGRATION DAY
 
-The actual MASTERDB registration API/interface was not available during Task 1 preparation.
+This is intentionally deferred until the agreed MASTERDB integration session.
 
-- [ ] Submit dataset to MASTERDB registration API/interface
-- [ ] Record registration timestamp
-- [ ] Record assigned MASTERDB internal record ID
+## Pre-integration state
+
+- Registration packet: prepared
+- Metadata/schema: prepared
+- Validation: 12/12 passed
+- Kaggle placeholder: documented
+- Live MASTERDB registration: not yet executed
+
+## Integration Day
+
+- [ ] Connect the Kaggle placeholder connector to MASTERDB
+- [ ] Record connector run ID/timestamp
+- [ ] Verify row count and source hash
+- [ ] Submit/register dataset
+- [ ] Record MASTERDB internal ID
 - [ ] Attach raw registration response
-- [ ] Complete discoverability/search proof
+- [ ] Capture discoverability/search proof
+
+No registration success is claimed before the real integration is performed.
